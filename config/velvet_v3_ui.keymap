@@ -25,7 +25,7 @@
             label = "MOUSE_LAYER";
             bindings = <&mo>;
             #binding-cells = <1>;
-            release-after-ms = <200>;
+            release-after-ms = <400>;
         };
 
         zip_auto_mouse: zip_auto_mouse {
@@ -33,6 +33,15 @@
             #input-processor-cells = <2>;
             require-prior-idle-ms = <800>;
             excluded-positions = <>;
+        };
+    };
+
+    macros {
+        double_L_click: double_L_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp F>;
+            label = "DOUBLE_L_CLICK";
         };
     };
 
@@ -85,10 +94,10 @@
 
         mouse {
             bindings = <
-&trans  &trans    &trans        &trans     &trans        &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mkp MB3  &mkp MB2      &mo 5      &mkp MB1      &mo 6                     &mo 6   &mkp MB1  &mkp MB2  &mkp MB3  &mo 5   &trans
-&trans  &trans    &trans        &trans     &trans        &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans    &trans        &trans     &double_L_click  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &mkp MB3  &mkp MB2      &mo 5      &mkp MB1         &mo 6                     &mo 6   &mkp MB1  &mkp MB2  &mkp MB3  &mo 5   &trans
+&trans  &trans    &trans        &trans     &trans           &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+                  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI     &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
 
             display-name = "Mouse";
