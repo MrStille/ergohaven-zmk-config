@@ -25,7 +25,7 @@
             label = "MOUSE_LAYER";
             bindings = <&mo>;
             #binding-cells = <1>;
-            release-after-ms = <400>;
+            release-after-ms = <250>;
         };
 
         zip_auto_mouse: zip_auto_mouse {
