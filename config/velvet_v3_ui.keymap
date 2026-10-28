@@ -130,10 +130,10 @@
 
         sniper {
             bindings = <
-&trans        &trans  &trans    &cmd_alt_Lclick  &double_L_click  &cmd_Lclick                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans  &mkp MB2  &mo 5            &mkp MB1         &trans                         &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_WIN  &trans  &trans    &trans           &trans           &trans                         &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans    &trans           &kp LEFT_WIN     &trans       &trans    &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans    &cmd_alt_Lclick  &double_L_click  &cmd_Lclick                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &mkp MB2  &mo 5            &mkp MB1         &trans                               &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_WIN  &trans  &trans    &trans           &trans           &trans                               &trans  &trans  &trans  &trans  &trans  &trans
+                      &trans    &trans           &kp LEFT_WIN     &trans       &trans    &kp LEFT_GUI  &trans  &trans  &trans  &trans
             >;
 
             display-name = "Sniper";
